@@ -1,4 +1,4 @@
 vagrant-php
 ===========
 
-A PHP unvironment in Vagrant
+A PHP environment in Vagrant

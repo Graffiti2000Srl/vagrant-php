@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     php_config.ssh.forward_agent = true
 
+    php_config.vm.network "public_network", {:bridge => 'Broadcom NetLink (TM) Gigabit Ethernet'}
     php_config.vm.network :forwarded_port, guest: 80, host: 1080
     php_config.vm.network :forwarded_port, guest: 443, host: 1443
 

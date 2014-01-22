@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     php_config.vm.provision :shell, :inline => "sudo apt-get updatel"
-    php_config.vm.provision :shell, :inline => "sudo apt-get install -y curl"
+    php_config.vm.provision :shell, :inline => "sudo apt-get install -y curl lftp"
     php_config.vm.provision :shell, :inline => "curl -sL rt.cx/ee | sudo bash && sudo ee system install"
   end
 end

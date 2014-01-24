@@ -26,6 +26,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     php_config.vm.provision :shell, :inline => "sudo apt-get update"
     php_config.vm.provision :shell, :inline => "sudo apt-get install -y curl lftp"
-    php_config.vm.provision :shell, :inline => "curl -sL rt.cx/ee | sudo bash && sudo ee system install"
+    php_config.vm.provision :shell, :inline => "curl -sL https://raw2.github.com/Graffiti2000Srl/easyengine/master/install.sh | sudo bash && sudo ee system install"
   end
 end
